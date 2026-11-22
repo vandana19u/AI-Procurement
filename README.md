@@ -36,9 +36,6 @@ This project delivers an end-to-end **Computational Procurement Resource and Evi
 │       ├── use-cases.json                    # 4 State Public Health Procurement Case Studies
 │       ├── checklist-templates.json          # 24-Point Due-Diligence Checklist with Citations
 │       └── policy-references.json            # Statutory & Bibliographic Database (GFR, ABDM, etc.)
-├── application_dossier/
-│   ├── Candidate_Resume.md                   # 2-Page Tailored Resume (Evidence Synthesis & Procurement)
-│   └── Cover_Letter.md                       # Formal 1-Page Cover Letter to KCDH-Ashoka Selection Committee
 ├── server.js                                 # Zero-dependency Node.js HTTP Server & API Endpoints
 ├── package.json                              # Project Manifest & Execution Scripts
 └── README.md                                 # Comprehensive Documentation & Architecture Guide
