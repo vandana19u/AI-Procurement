@@ -1,0 +1,221 @@
+{
+  "domains": [
+    {
+      "id": 1,
+      "code": "PROC_PRINCIPLES",
+      "title": "Procurement Principles, Frameworks & Practical Tools",
+      "weight": 0.12,
+      "leadAuthor": "KCDH Evidence Synthesis Working Group",
+      "summary": "Governs public buying guidelines under General Financial Rules (GFR 2017) and Government e-Marketplace (GeM), shifting from rudimentary lowest-cost (L1) selection to Quality and Cost Based Selection (QCBS) tailored for algorithmic health systems.",
+      "keyStatutes": [
+        "GFR 2017 Rule 144 (Fundamental principles of public buying)",
+        "GFR 2017 Rule 149 (Mandatory GeM procurement)",
+        "GFR 2017 Rule 192 (Quality and Cost Based Selection - QCBS)",
+        "Department of Expenditure Manual for Procurement of Goods & Services (2022)"
+      ],
+      "internationalGuidance": [
+        "WHO Guidance on Ethics and Governance of AI for Health (2021) - Chapter 5",
+        "NHS England / NICE Evidence Standards Framework (ESF) for Digital Health Technologies",
+        "OECD Recommendation of the Council on Public Procurement (2015)"
+      ],
+      "criticalRisks": [
+        "Unmitigated L1 commodity bidding leading to brittle algorithms with high clinical failure rates.",
+        "Opaque bidding specifications that unfairly favor single multinational hardware vendors.",
+        "Absence of pre-award computational bench testing on local clinical samples."
+      ],
+      "recommendedClauses": [
+        "The evaluation shall follow a Quality and Cost Based Selection (QCBS 80:20) methodology, wherein bidders must achieve a minimum qualifying technical benchmark of 75 marks before commercial opening.",
+        "Mandatory live sandboxed bench testing shall be conducted on an anonymized state-provided clinical validation test set prior to final contract award."
+      ]
+    },
+    {
+      "id": 2,
+      "code": "CLINICAL_PERF",
+      "title": "Clinical & Technical Performance Validation",
+      "weight": 0.18,
+      "leadAuthor": "KCDH Evidence Synthesis Working Group",
+      "summary": "Mandates empirical verification of diagnostic accuracy (Sensitivity, Specificity, AUROC, F1 Score) against robust clinical gold standards, with explicit subgroup parity testing across diverse Indian demographic cohorts.",
+      "keyStatutes": [
+        "ICMR Ethical Guidelines for Application of AI in Biomedical Research and Healthcare (2023)",
+        "CDSCO Guidance on Clinical Evaluation of Medical Devices and SaMD",
+        "Strategy for AI in Healthcare for India (SAHI) - NITI Aayog"
+      ],
+      "internationalGuidance": [
+        "US FDA AI/ML-Based Software as a Medical Device Action Plan",
+        "TRIPOD-AI & CONSORT-AI Reporting Guidelines",
+        "WHO Regulatory Considerations on AI for Health (2023)"
+      ],
+      "criticalRisks": [
+        "Laboratory overfitting: Vendor claims based solely on clean western academic benchmarks.",
+        "High false-positive rate swamping public health laboratory confirmatory capacity (e.g. CBNAAT/TrueNat).",
+        "Severe diagnostic drop-offs in rural populations, geriatric cohorts, or pediatric patients."
+      ],
+      "recommendedClauses": [
+        "The AI solution must demonstrate a minimum verified Sensitivity of 90.0% and Specificity of 85.0% for screening workflows, evaluated against double-blind specialist consensus.",
+        "Bidder must submit a formal Clinical Evaluation Report (CER) including subgroup disaggregated performance metrics across gender, age brackets, and key comorbidities."
+      ]
+    },
+    {
+      "id": 3,
+      "code": "SAFETY_HUMAN_OVERSIGHT",
+      "title": "Safety, Fairness, Equity & Human Oversight",
+      "weight": 0.14,
+      "leadAuthor": "KCDH Evidence Synthesis Working Group",
+      "summary": "Ensures artificial intelligence acts as assistive decision-support rather than autonomous clinical authority, mandating human-in-the-loop safeguards, bias auditing, and graceful failure fallbacks.",
+      "keyStatutes": [
+        "Clinical Establishments (Registration and Regulation) Act (2010)",
+        "National Medical Commission (Professional Conduct) Regulations",
+        "NITI Aayog Responsible AI for All (Approach Documents 1 & 2)"
+      ],
+      "internationalGuidance": [
+        "EU AI Act (Regulation 2024/1689) - High-Risk Health Systems Requirements",
+        "ISO 14971: Application of risk management to medical devices",
+        "IEEE 7000 Series Standards on Algorithmic Bias & Ethical Design"
+      ],
+      "criticalRisks": [
+        "Autonomous algorithmic diagnostic decisions without qualified medical officer validation.",
+        "System crashes or silent freezes when cellular networks drop in remote primary health centres.",
+        "Algorithmic discrimination against tribal or marginalized socio-economic communities."
+      ],
+      "recommendedClauses": [
+        "Human-in-the-Loop Safeguard: The software shall strictly operate in an assistive capacity; the final clinical diagnosis, referral, or prescription shall solely rest with the registered medical practitioner.",
+        "Deterministic Fallback Mode: In the event of system error, edge computing failure, or network disruption, the system shall seamlessly revert to manual diagnostic workflow without loss of patient records."
+      ]
+    },
+    {
+      "id": 4,
+      "code": "DATA_PRIVACY_SECURITY",
+      "title": "Data Governance, Privacy (DPDP) & Cybersecurity",
+      "weight": 0.15,
+      "leadAuthor": "KCDH Evidence Synthesis Working Group",
+      "summary": "Enforces strict statutory adherence to the Digital Personal Data Protection (DPDP) Act 2023, ABDM Health Data Management Policy, sovereign data localization, and CERT-In cybersecurity mandates.",
+      "keyStatutes": [
+        "Digital Personal Data Protection (DPDP) Act 2023 (Act No. 22 of 2023)",
+        "ABDM Health Data Management Policy (HDMP)",
+        "Indian Computer Emergency Response Team (CERT-In) Cyber Security Directions"
+      ],
+      "internationalGuidance": [
+        "ISO/IEC 27001 (Information Security Management)",
+        "HIPAA Security & Privacy Rules (Comparative Benchmark)",
+        "GDPR Health Data Safeguards (Art. 9)"
+      ],
+      "criticalRisks": [
+        "Transmission of unencrypted citizen health records to foreign or un-empanelled commercial cloud servers.",
+        "Unauthorized vendor harvesting of public health telemetry for secondary commercial model training.",
+        "Ransomware vulnerabilities in unpatched legacy edge deployment terminals."
+      ],
+      "recommendedClauses": [
+        "Data Sovereignty & Localization: All patient data, model inference inputs, telemetry, and audit logs shall be hosted strictly within the territory of India on MeitY-empanelled Cloud Service Providers (CSPs).",
+        "Zero Unauthorized Secondary Use: The vendor is explicitly prohibited from utilizing public health datasets or patient telemetry for secondary training or commercialization without explicit state authorization."
+      ]
+    },
+    {
+      "id": 5,
+      "code": "INTEROP_STANDARDS",
+      "title": "Interoperability & National Standards (ABDM)",
+      "weight": 0.13,
+      "leadAuthor": "KCDH Evidence Synthesis Working Group",
+      "summary": "Mandates complete alignment with the Ayushman Bharat Digital Mission (ABDM) architecture, HL7 FHIR Release 4 schemas, DICOM 3.0 imaging standards, and standardized clinical terminologies.",
+      "keyStatutes": [
+        "Ayushman Bharat Digital Mission (ABDM) Architecture v1.0",
+        "National Digital Health Blueprint (NDHB) - MoHFW",
+        "National Health Stack Specifications (NITI Aayog)"
+      ],
+      "internationalGuidance": [
+        "HL7 FHIR Release 4 (Fast Healthcare Interoperability Resources)",
+        "DICOM PS 3.1 - 3.20 (Digital Imaging and Communications in Medicine)",
+        "SNOMED CT International & LOINC terminologies"
+      ],
+      "criticalRisks": [
+        "Proprietary vendor data formats creating acute vendor lock-in and isolated data silos.",
+        "Inability to link patient screenings with Ayushman Bharat Health Account (ABHA).",
+        "Incompatibility with existing state Picture Archiving and Communication Systems (PACS)."
+      ],
+      "recommendedClauses": [
+        "ABDM Milestone Compliance: The solution must possess active sandbox certification for ABDM Milestones M1 (ABHA Creation/Verification), M2 (HFR/HPR registration), and M3 (FHIR R4 Health Information Exchange).",
+        "Open Interoperability: Medical imaging feeds must natively ingest and export DICOM 3.0 compliant files without requiring proprietary encoding or conversion dongles."
+      ]
+    },
+    {
+      "id": 6,
+      "code": "TRANSPARENCY_EXPLAIN",
+      "title": "Transparency, Explainability & Accountability",
+      "weight": 0.10,
+      "leadAuthor": "KCDH Evidence Synthesis Working Group",
+      "summary": "Demands algorithmic inspectability through standardized Model Factsheets, verifiable clinical explainability maps (heatmaps/Grad-CAM), and tamper-evident audit logs.",
+      "keyStatutes": [
+        "National Strategy for AI (NSAI) - NITI Aayog",
+        "Draft Indian AI Governance Framework - MeitY",
+        "Right to Information (RTI) Act (Algorithmic transparency considerations)"
+      ],
+      "internationalGuidance": [
+        "ISO/IEC 42001: Artificial Intelligence Management System",
+        "OECD AI Transparency and Explainability Principles",
+        "Google Model Cards / Partnership on AI Factsheets"
+      ],
+      "criticalRisks": [
+        "Opaque 'Black Box' inference preventing clinicians from validating anatomical reasons for alerts.",
+        "Absence of audit logging in medical negligence disputes.",
+        "Unverified marketing claims regarding model architectures and parameter counts."
+      ],
+      "recommendedClauses": [
+        "Model Factsheet Submission: The bidder must furnish a comprehensive Model Card detailing parameter count, training set demographics, known edge failure cases, and hardware specifications.",
+        "Visual Explainability: For radiological and morphological triage, the system must provide verifiable visual heatmaps (e.g., Grad-CAM) highlighting anatomical regions of algorithmic suspicion."
+      ]
+    },
+    {
+      "id": 7,
+      "code": "REGULATORY_INSTITUTIONAL",
+      "title": "Regulatory & Institutional Considerations",
+      "weight": 0.10,
+      "leadAuthor": "KCDH Evidence Synthesis Working Group",
+      "summary": "Verifies statutory licensing under Central Drugs Standard Control Organisation (CDSCO) Medical Device Rules (MDR 2017) as Software as a Medical Device (SaMD) and Institutional Ethics Committee clearance.",
+      "keyStatutes": [
+        "Medical Device Rules (MDR 2017) under Drugs and Cosmetics Act, 1940",
+        "CDSCO Classification of Software as a Medical Device (SaMD) Notice",
+        "ICMR National Ethical Guidelines for Biomedical and Health Research"
+      ],
+      "internationalGuidance": [
+        "IMDRF Software as a Medical Device (SaMD) Harmonization",
+        "US FDA 510(k) / De Novo Medical Device Clearances",
+        "EU MDR 2017/745 CE Mark Certification"
+      ],
+      "criticalRisks": [
+        "Procurement of unapproved diagnostic software operating under fraudulent 'Research Use Only' claims in clinical care.",
+        "Civil and criminal liability for state health officials procuring unregulated SaMD.",
+        "Unapproved clinical pilots conducted without ICMR-registered Institutional Ethics Committee oversight."
+      ],
+      "recommendedClauses": [
+        "Statutory CDSCO Licensing: Bidder must furnish valid CDSCO Form MD-15 (Import License) or Form MD-5 / MD-9 (Manufacturing License) classified as Class B or Class C Software as a Medical Device.",
+        "Ethics Undertaking: All preliminary pilot validation data submitted in technical bids must carry formal approval from an ICMR-registered Institutional Ethics Committee (IEC)."
+      ]
+    },
+    {
+      "id": 8,
+      "code": "IMPLEMENTATION_SLA_TCO",
+      "title": "Implementation Readiness, Contracting, SLAs & Monitoring",
+      "weight": 0.08,
+      "leadAuthor": "KCDH Evidence Synthesis Working Group",
+      "summary": "Establishes long-term lifecycle governance, post-market algorithmic drift surveillance, uptime Service Level Agreements (SLAs), and transparent Total Cost of Ownership (TCO) budgeting.",
+      "keyStatutes": [
+        "GeM General Terms and Conditions (GTC) on SLA & Liquidated Damages",
+        "GFR 2017 Rule 172 (Performance Security) and Rule 225 (Contract Management)",
+        "National Health Mission State PIP Financial Guidelines"
+      ],
+      "internationalGuidance": [
+        "ISO/IEC 23894: Artificial Intelligence - Risk Management",
+        "NHS England Post-Deployment Algorithm Monitoring Protocol",
+        "WHO Guidance on Total Cost of Ownership for Digital Health"
+      ],
+      "criticalRisks": [
+        "Undetected algorithmic performance drift over time due to seasonal diseases or sensor degradation.",
+        "Crippling unbudgeted recurring per-scan fees and exorbitant hardware vendor lock-in.",
+        "Lack of designated state-level training resulting in abandoned edge terminals."
+      ],
+      "recommendedClauses": [
+        "Mandatory Algorithmic Drift Recalibration: Vendor shall perform semi-annual drift audits and model recalibrations at zero additional cost throughout the 3-year contract lifecycle.",
+        "Exit Management & Data Handover: Upon contract expiry or termination, vendor shall transfer all state clinical inference logs, annotations, and system telemetry in open standard format within 30 days."
+      ]
+    }
+  ]
+}

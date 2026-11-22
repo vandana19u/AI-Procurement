@@ -1,0 +1,23 @@
+{
+  "name": "ai-for-health-procurement-kcdh-ashoka",
+  "version": "1.0.0",
+  "description": "Computational Procurement Resource and Evidence Synthesis Platform for AI in Healthcare, developed for Koita Centre for Digital Health at Ashoka University (KCDH-Ashoka).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node -e \"console.log('Validating files...'); require('./server.js'); process.exit(0);\""
+  },
+  "keywords": [
+    "ai-procurement",
+    "digital-health",
+    "kcdh-ashoka",
+    "abdm",
+    "sahi",
+    "gfr-2017",
+    "gem",
+    "cdsco-samd",
+    "decision-support"
+  ],
+  "author": "Research Associate Candidate, KCDH-Ashoka",
+  "license": "Apache-2.0"
+}

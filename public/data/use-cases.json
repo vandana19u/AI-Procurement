@@ -1,0 +1,132 @@
+{
+  "useCases": [
+    {
+      "id": "CASE_TB_CXR",
+      "title": "AI-Enabled Chest X-Ray Screening for Pulmonary Tuberculosis",
+      "authority": "State National Health Mission (NHM) & State TB Cell (NTEP)",
+      "targetFacility": "Mobile Diagnostic Vans & Rural District TB Centres across 12 High-Burden Districts",
+      "clinicalModality": "Digital Radiography (CXR) - Computer-Aided Detection (CAD) for Pulmonary TB",
+      "targetEndUsers": "Medical Officers (MBBS), Radiographers & NTEP Senior Treatment Supervisors",
+      "autonomyLevel": "Triage & Worklist Prioritization (Non-autonomous; flags suspicious lesions for sputum/CBNAAT test)",
+      "procurementStage": "RFP Formulation & Technical Specification Drafting",
+      "procurementMechanism": "GeM Custom Bid (QCBS 80:20)",
+      "volumeEstimate": "120,000 screening scans annually",
+      "hardwareContext": "Portable battery-powered Digital Radiography (DR) machines installed in all-terrain vans",
+      "connectivityProfile": "Intermittent 2G/4G cellular networks; requiring zero-connectivity offline edge processing",
+      "complianceProfile": {
+        "cdscoClass": "Class B / Class C SaMD",
+        "abdmRequirement": "M1 (ABHA verification) & Nikshay Portal API integration",
+        "minSensitivity": "92.0%",
+        "minSpecificity": "85.0%",
+        "dataLocalization": "Mandatory sovereign hosting on MeitY empanelled CSP"
+      },
+      "evaluationScores": {
+        "PROC_PRINCIPLES": 88,
+        "CLINICAL_PERF": 94,
+        "SAFETY_HUMAN_OVERSIGHT": 92,
+        "DATA_PRIVACY_SECURITY": 90,
+        "INTEROP_STANDARDS": 95,
+        "TRANSPARENCY_EXPLAIN": 89,
+        "REGULATORY_INSTITUTIONAL": 96,
+        "IMPLEMENTATION_SLA_TCO": 86
+      },
+      "governmentTestingNotes": "Validated with simulated State TB Officer and State NHM Procurement Committee. Highlighted the necessity of offline local inference to prevent workflow halt in tribal zones where mobile signals are unavailable."
+    },
+    {
+      "id": "CASE_RETINOPATHY_AAM",
+      "title": "Autonomous Diabetic Retinopathy Screening at Ayushman Arogya Mandirs (AAM)",
+      "authority": "State Directorate of Health Services (NCD Division)",
+      "targetFacility": "250 Sub-Health Centre (SHC) level Ayushman Arogya Mandirs",
+      "clinicalModality": "Non-Mydriatic Fundus Photography with automated grading (Referable vs. Non-Referable DR)",
+      "targetEndUsers": "Community Health Officers (CHOs) and Auxiliary Nurse Midwives (ANMs)",
+      "autonomyLevel": "Autonomous Screening Triage with tele-ophthalmology referral for referable stages",
+      "procurementStage": "Pre-Tender Technical Feasibility & Pilot Evaluation",
+      "procurementMechanism": "Open E-Tender (State Medical Services Corporation QCBS 70:30)",
+      "volumeEstimate": "75,000 rural diabetic patient screenings annually",
+      "hardwareContext": "Handheld non-mydriatic fundus cameras paired with Android/Windows edge tablets",
+      "connectivityProfile": "Variable rural mobile broadband (3G/4G)",
+      "complianceProfile": {
+        "cdscoClass": "Class C Software as a Medical Device",
+        "abdmRequirement": "M1 (ABHA creation), M2 (HFR clinic registry), M3 (FHIR R4 DiagnosticReport)",
+        "minSensitivity": "90.0%",
+        "minSpecificity": "88.0%",
+        "dataLocalization": "Mandatory in-country data storage"
+      },
+      "evaluationScores": {
+        "PROC_PRINCIPLES": 84,
+        "CLINICAL_PERF": 91,
+        "SAFETY_HUMAN_OVERSIGHT": 88,
+        "DATA_PRIVACY_SECURITY": 92,
+        "INTEROP_STANDARDS": 90,
+        "TRANSPARENCY_EXPLAIN": 85,
+        "REGULATORY_INSTITUTIONAL": 93,
+        "IMPLEMENTATION_SLA_TCO": 82
+      },
+      "governmentTestingNotes": "Feedback highlighted the critical requirement for real-time image quality feedback: CHOs require the software to flag ungradable images immediately so the patient does not leave before a re-take is performed."
+    },
+    {
+      "id": "CASE_MATERNAL_TRIAGE",
+      "title": "Maternal & Neonatal High-Risk Labor Room Triage System",
+      "authority": "State Maternal & Child Health Directorate (LaQshya Program)",
+      "targetFacility": "18 High-Volume District Hospital Labor Rooms and SNCUs",
+      "clinicalModality": "Continuous Multi-Parameter Vitals, Electronic Partograph & Fetal Heart Rate Monitoring",
+      "targetEndUsers": "Duty Staff Nurses, Obstetricians, Pediatricians & Medical Officers",
+      "autonomyLevel": "Assistive Clinical Decision Support (Real-time audible & visual early warning indicators)",
+      "procurementStage": "RFP Formulation & Pilot Design",
+      "procurementMechanism": "State E-Procurement Portal (QCBS 80:20 with Proof-of-Concept Pilot)",
+      "volumeEstimate": "45,000 deliveries monitored per year",
+      "hardwareContext": "Bedside touch terminals and central nursing station telemetry monitors",
+      "connectivityProfile": "Hospital Local Area Network (Ethernet + Wi-Fi)",
+      "complianceProfile": {
+        "cdscoClass": "Class C / Class D Software as a Medical Device",
+        "abdmRequirement": "M1, M2, M3 integration with Hospital Information Management System (HIMS)",
+        "minSensitivity": "94.0%",
+        "minSpecificity": "82.0%",
+        "dataLocalization": "Strict zero-cloud on-premise hospital intranet hosting"
+      },
+      "evaluationScores": {
+        "PROC_PRINCIPLES": 82,
+        "CLINICAL_PERF": 89,
+        "SAFETY_HUMAN_OVERSIGHT": 96,
+        "DATA_PRIVACY_SECURITY": 94,
+        "INTEROP_STANDARDS": 87,
+        "TRANSPARENCY_EXPLAIN": 91,
+        "REGULATORY_INSTITUTIONAL": 94,
+        "IMPLEMENTATION_SLA_TCO": 79
+      },
+      "governmentTestingNotes": "Clinicians demanded rigorous alarm-fatigue mitigation clauses to prevent constant false-positive beeping in crowded labor rooms, as well as clear legal disclaimers ensuring doctor primacy."
+    },
+    {
+      "id": "CASE_ICU_SEPSIS",
+      "title": "Real-Time ICU Sepsis & Clinical Deterioration Early Warning System",
+      "authority": "Autonomous State Medical College & Tertiary Referral Hospital",
+      "targetFacility": "60-Bed Medical & Surgical Intensive Care Units (ICUs)",
+      "clinicalModality": "Multi-stream physiological telemetry, lab feeds (arterial blood gas, CBC), and vitals NLP",
+      "targetEndUsers": "Intensivists, Critical Care Fellows, and Senior Nursing Supervisors",
+      "autonomyLevel": "Assistive Early Warning System (Predictive risk score for septic shock 4-6 hours in advance)",
+      "procurementStage": "Technical Bid Evaluation & Vendor Demonstration",
+      "procurementMechanism": "Open Tender Two-Bid System (Technical + Financial QCBS)",
+      "volumeEstimate": "3,200 critical admissions monitored per year",
+      "hardwareContext": "Multi-vendor bedside monitors linked to a central server via HL7 gateway",
+      "connectivityProfile": "Dedicated Gigabit Medical Intranet; air-gapped from public internet",
+      "complianceProfile": {
+        "cdscoClass": "Class C SaMD",
+        "abdmRequirement": "M3 compliant EHR export via FHIR Encounter & Observation resources",
+        "minSensitivity": "88.0%",
+        "minSpecificity": "86.0%",
+        "dataLocalization": "On-premise air-gapped server infrastructure"
+      },
+      "evaluationScores": {
+        "PROC_PRINCIPLES": 85,
+        "CLINICAL_PERF": 92,
+        "SAFETY_HUMAN_OVERSIGHT": 94,
+        "DATA_PRIVACY_SECURITY": 97,
+        "INTEROP_STANDARDS": 91,
+        "TRANSPARENCY_EXPLAIN": 88,
+        "REGULATORY_INSTITUTIONAL": 90,
+        "IMPLEMENTATION_SLA_TCO": 83
+      },
+      "governmentTestingNotes": "Evaluators strongly emphasized multi-vendor physiological monitor compatibility to ensure the state is not forced to replace existing Philips or Mindray equipment to accommodate the AI tool."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "references": [
+    {
+      "id": "REF_GFR_2017",
+      "category": "Indian Statutory & Financial",
+      "title": "General Financial Rules (GFR 2017)",
+      "issuingBody": "Ministry of Finance, Department of Expenditure, Government of India",
+      "year": 2017,
+      "clauses": ["Rule 144", "Rule 149", "Rule 173", "Rule 175", "Rule 192", "Rule 225"],
+      "relevance": "Core legal backbone governing all public procurement, competitive bidding, GeM mandating, QCBS technical scoring, and contractual compliance."
+    },
+    {
+      "id": "REF_ABDM_ARCH",
+      "category": "National Digital Health",
+      "title": "Ayushman Bharat Digital Mission (ABDM) Architecture & Milestone Specifications",
+      "issuingBody": "National Health Authority (NHA), MoHFW",
+      "year": 2022,
+      "clauses": ["Milestone M1 (ABHA)", "Milestone M2 (HFR/HPR)", "Milestone M3 (FHIR R4 Exchange)"],
+      "relevance": "Technical interoperability benchmarks for patient health ID linkage and digital health record federation."
+    },
+    {
+      "id": "REF_DPDP_2023",
+      "category": "Data Protection & Privacy",
+      "title": "Digital Personal Data Protection Act, 2023 (DPDP)",
+      "issuingBody": "Ministry of Law and Justice / MeitY, Government of India",
+      "year": 2023,
+      "clauses": ["Section 4 (Grounds for Processing)", "Section 6 (Consent Architecture)", "Section 16 (Cross-border Transfer Restrictions)"],
+      "relevance": "Strict statutory mandate governing personal health data processing, data fiduciaries, consent tracking, and localized processing."
+    },
+    {
+      "id": "REF_CDSCO_MDR",
+      "category": "Medical Device Regulation",
+      "title": "Medical Device Rules (MDR 2017) & SaMD Guidance",
+      "issuingBody": "Central Drugs Standard Control Organisation (CDSCO), Directorate General of Health Services",
+      "year": 2017,
+      "clauses": ["Form MD-5 / MD-9", "Form MD-14 / MD-15", "Risk Classification Class A-D"],
+      "relevance": "Statutory pre-qualification requirement; clinical AI algorithms functioning as diagnostic software must hold valid CDSCO licenses."
+    },
+    {
+      "id": "REF_SAHI_NITI",
+      "category": "National Strategy & Policy",
+      "title": "Strategy for AI in Healthcare for India (SAHI)",
+      "issuingBody": "NITI Aayog, Government of India",
+      "year": 2021,
+      "clauses": ["Section 3 (Clinical Validation)", "Section 5 (Demographic Equity)", "Section 7 (Public Procurement Models)"],
+      "relevance": "Strategic roadmap for scaling responsible healthcare AI across primary and secondary tiers of the Indian health system."
+    },
+    {
+      "id": "REF_WHO_ETHICS",
+      "category": "International Multilateral Guidance",
+      "title": "Ethics and Governance of Artificial Intelligence for Health",
+      "issuingBody": "World Health Organization (WHO)",
+      "year": 2021,
+      "clauses": ["Core Principle 1 (Protecting Autonomy)", "Principle 2 (Promoting Well-Being)", "Principle 3 (Ensuring Transparency)"],
+      "relevance": "Global foundational guidance establishing ethical redlines, human oversight, and validation standards for health systems."
+    },
+    {
+      "id": "REF_NHS_ESF",
+      "category": "International Procurement Tool",
+      "title": "Evidence Standards Framework (ESF) for Digital Health Technologies & AI Buyer's Guide",
+      "issuingBody": "National Institute for Health and Care Excellence (NICE) / NHS England",
+      "year": 2023,
+      "clauses": ["Tier C (Clinical Decision Support)", "Tier B (Behavior Change)", "Algorithmic Drift Protocol"],
+      "relevance": "Leading international procurement due-diligence framework adapted for tiered risk assessment."
+    },
+    {
+      "id": "REF_ISO_42001",
+      "category": "International Standards",
+      "title": "ISO/IEC 42001:2023 - Artificial Intelligence Management System",
+      "issuingBody": "International Organization for Standardization (ISO) / IEC",
+      "year": 2023,
+      "clauses": ["Clause 6 (Risk Assessment)", "Clause 8 (Operational Control)", "Annex A (AI Controls)"],
+      "relevance": "Standardized auditing baseline for AI developer transparency, quality management, and continuous monitoring."
+    }
+  ]
+}

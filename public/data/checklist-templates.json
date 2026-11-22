@@ -1,0 +1,220 @@
+{
+  "checklists": [
+    {
+      "domainId": 1,
+      "domainCode": "PROC_PRINCIPLES",
+      "items": [
+        {
+          "id": "CHK_1_1",
+          "text": "Has the procurement authority adopted Quality and Cost-Based Selection (QCBS) rather than lowest-cost (L1) bidding?",
+          "mandatory": true,
+          "statuteRef": "GFR 2017 Rule 192 & Manual for Procurement of Goods (2022)",
+          "guidance": "Clinical AI must not be procured under commodity L1 rules; technical quality benchmark must carry at least 70% to 80% weight."
+        },
+        {
+          "id": "CHK_1_2",
+          "text": "Is pre-award sandboxed computational bench testing on local clinical samples mandated before financial bid opening?",
+          "mandatory": true,
+          "statuteRef": "GeM Special Bidding Guidelines for Software & AI Services",
+          "guidance": "Prevents award to algorithms that fail on local demographic data."
+        },
+        {
+          "id": "CHK_1_3",
+          "text": "Are proprietary single-vendor hardware lock-in clauses explicitly excluded from tender requirements?",
+          "mandatory": true,
+          "statuteRef": "GFR 2017 Rule 144(i) (Ensuring competitive non-restrictive technical specs)",
+          "guidance": "Software must operate on multi-vendor standard imaging / diagnostic hardware."
+        }
+      ]
+    },
+    {
+      "domainId": 2,
+      "domainCode": "CLINICAL_PERF",
+      "items": [
+        {
+          "id": "CHK_2_1",
+          "text": "Does the vendor provide external clinical validation on Indian populations demonstrating Sensitivity ≥90% and Specificity ≥85%?",
+          "mandatory": true,
+          "statuteRef": "ICMR Guidelines for AI in Healthcare & WHO Guidance on Health AI",
+          "guidance": "Self-reported training accuracy or synthetic benchmark testing is insufficient."
+        },
+        {
+          "id": "CHK_2_2",
+          "text": "Are validation metrics disaggregated across gender, age brackets, and prevalent national comorbidities?",
+          "mandatory": true,
+          "statuteRef": "TRIPOD-AI Reporting Guidelines",
+          "guidance": "Ensures algorithmic equity across vulnerable subgroups."
+        },
+        {
+          "id": "CHK_2_3",
+          "text": "Is the reference clinical gold standard clearly documented and verified by a multi-expert arbitration panel?",
+          "mandatory": false,
+          "statuteRef": "CDSCO Medical Device Clinical Investigation Guidance",
+          "guidance": "Double-blind expert reads with tie-breaker arbitration."
+        }
+      ]
+    },
+    {
+      "domainId": 3,
+      "domainCode": "SAFETY_HUMAN_OVERSIGHT",
+      "items": [
+        {
+          "id": "CHK_3_1",
+          "text": "Does the system explicitly operate in an assistive 'Human-in-the-Loop' decision-support capacity without replacing doctor authorization?",
+          "mandatory": true,
+          "statuteRef": "Clinical Establishments Act & National Medical Commission Ethics Regulations",
+          "guidance": "Clinicians must hold ultimate diagnostic, prescribing, and treatment authority."
+        },
+        {
+          "id": "CHK_3_2",
+          "text": "Is there an automated deterministic fallback mechanism when cellular network connectivity fails?",
+          "mandatory": true,
+          "statuteRef": "National Health Systems Resource Centre (NHSRC) Hardware Norms",
+          "guidance": "Crucial for remote PHCs, Sub-Centres, and mobile health vans."
+        },
+        {
+          "id": "CHK_3_3",
+          "text": "Has the solution been audited for algorithmic bias against marginalized, tribal, and rural patient cohorts?",
+          "mandatory": false,
+          "statuteRef": "NITI Aayog Strategy for AI in Healthcare for India (SAHI)",
+          "guidance": "Prevent disparate false-negative rates in vulnerable populations."
+        }
+      ]
+    },
+    {
+      "domainId": 4,
+      "domainCode": "DATA_PRIVACY_SECURITY",
+      "items": [
+        {
+          "id": "CHK_4_1",
+          "text": "Are all patient data, model inference inputs, and server logs hosted strictly on MeitY-empanelled CSP data centres in India?",
+          "mandatory": true,
+          "statuteRef": "Digital Personal Data Protection (DPDP) Act 2023 & CERT-In Directives",
+          "guidance": "Cross-border transfer of sensitive public health records without authorization is illegal."
+        },
+        {
+          "id": "CHK_4_2",
+          "text": "Does the routine procurement and inference workflow function with zero unencrypted Protected Health Information (PHI)?",
+          "mandatory": true,
+          "statuteRef": "ABDM Health Data Management Policy (HDMP)",
+          "guidance": "Anonymization or pseudonymization before cloud ingestion."
+        },
+        {
+          "id": "CHK_4_3",
+          "text": "Is the vendor contractually prohibited from using state citizen health data to train or fine-tune proprietary commercial models?",
+          "mandatory": true,
+          "statuteRef": "Department of Expenditure Public Procurement Integrity Guidelines",
+          "guidance": "State retains sovereign data ownership."
+        }
+      ]
+    },
+    {
+      "domainId": 5,
+      "domainCode": "INTEROP_STANDARDS",
+      "items": [
+        {
+          "id": "CHK_5_1",
+          "text": "Does the software hold official Sandbox Certification for ABDM Milestones (M1, M2, and M3)?",
+          "mandatory": true,
+          "statuteRef": "National Health Authority (NHA) ABDM Integration Guidelines",
+          "guidance": "Allows ABHA linkage and state registry synchronization."
+        },
+        {
+          "id": "CHK_5_2",
+          "text": "Does the system support open standards: HL7 FHIR R4 for health records and native DICOM 3.0 for medical imaging?",
+          "mandatory": true,
+          "statuteRef": "National Digital Health Blueprint (NDHB) Standards",
+          "guidance": "Prevents proprietary lock-in with state PACS and EMR systems."
+        },
+        {
+          "id": "CHK_5_3",
+          "text": "Are diagnostic classifications mapped to standard clinical terminologies (SNOMED-CT, LOINC, ICD-11)?",
+          "mandatory": false,
+          "statuteRef": "MoHFW Electronic Health Record (EHR) Standards for India",
+          "guidance": "Ensures longitudinal epidemiological tracking across state health databases."
+        }
+      ]
+    },
+    {
+      "domainId": 6,
+      "domainCode": "TRANSPARENCY_EXPLAIN",
+      "items": [
+        {
+          "id": "CHK_6_1",
+          "text": "Has the vendor submitted a standardized Model Card / Factsheet detailing training demographics and known edge failure cases?",
+          "mandatory": true,
+          "statuteRef": "ISO/IEC 42001 & NITI Aayog Responsible AI Framework",
+          "guidance": "Ensures algorithmic accountability and transparency."
+        },
+        {
+          "id": "CHK_6_2",
+          "text": "Does the clinical interface provide visual explainability (e.g. Grad-CAM heatmaps, bounding boxes) for radiological/morphological alerts?",
+          "mandatory": true,
+          "statuteRef": "WHO Regulatory Guidance on AI for Health",
+          "guidance": "Allows medical officers to rapidly verify anatomical basis of suspicion."
+        },
+        {
+          "id": "CHK_6_3",
+          "text": "Is there a tamper-evident audit log recording every inference timestamp, model version, and user action?",
+          "mandatory": true,
+          "statuteRef": "CERT-In Cyber Security Audit Guidelines & Indian Evidence Act",
+          "guidance": "Crucial for medical-legal auditability."
+        }
+      ]
+    },
+    {
+      "domainId": 7,
+      "domainCode": "REGULATORY_INSTITUTIONAL",
+      "items": [
+        {
+          "id": "CHK_7_1",
+          "text": "Does the vendor possess a valid CDSCO manufacturing (MD-5/MD-9) or import (MD-15) license for Software as a Medical Device (SaMD)?",
+          "mandatory": true,
+          "statuteRef": "CDSCO Medical Device Rules (MDR 2017) under Drugs & Cosmetics Act",
+          "guidance": "Statutory prerequisite for clinical deployment in public facilities."
+        },
+        {
+          "id": "CHK_7_2",
+          "text": "Has the validation study or pilot design been reviewed and approved by an ICMR-registered Institutional Ethics Committee (IEC)?",
+          "mandatory": true,
+          "statuteRef": "ICMR National Ethical Guidelines for Biomedical and Health Research",
+          "guidance": "Mandatory for clinical research or pilot trials."
+        },
+        {
+          "id": "CHK_7_3",
+          "text": "Has the bidder submitted an affidavit declaring no conflict of interest or undisclosed exclusivity pacts with hardware manufacturers?",
+          "mandatory": true,
+          "statuteRef": "GFR 2017 Rule 175 (Code of Integrity for Public Procurement)",
+          "guidance": "Ensures anti-corruption and competitive fairness."
+        }
+      ]
+    },
+    {
+      "domainId": 8,
+      "domainCode": "IMPLEMENTATION_SLA_TCO",
+      "items": [
+        {
+          "id": "CHK_8_1",
+          "text": "Does the contract include a mandatory semi-annual algorithmic drift audit and recalibration clause at no extra licensing fee?",
+          "mandatory": true,
+          "statuteRef": "GeM Service Level Agreement Norms & ISO/IEC 23894",
+          "guidance": "Guarantees sustained accuracy over the full multi-year contract lifecycle."
+        },
+        {
+          "id": "CHK_8_2",
+          "text": "Has the Total Cost of Ownership (TCO) including compute infrastructure, maintenance, and staff training been fully costed?",
+          "mandatory": true,
+          "statuteRef": "Department of Expenditure Guidelines on TCO Evaluation",
+          "guidance": "Prevents unanticipated runaway cloud and support costs."
+        },
+        {
+          "id": "CHK_8_3",
+          "text": "Is there a structured exit management and data handover protocol (transfer within 30 days in open formats)?",
+          "mandatory": true,
+          "statuteRef": "GFR 2017 Rule 225 (Contract Management & Transition)",
+          "guidance": "Eliminates state health department vendor lock-in upon contract conclusion."
+        }
+      ]
+    }
+  ]
+}
