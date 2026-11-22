@@ -110,7 +110,3 @@ Then visit **`http://localhost:3000`** in your browser.
 
 ---
 
-## 📬 Recruitment Application Kit (For KCDH-Ashoka Selection Committee)
-All candidate application documents required under Page 4 of the Job Description are prepared and located in:
-- [Candidate Resume (2 Pages)](file:///c:/Users/Prakhar%20Sharma/Downloads/Vandana%20assignn/application_dossier/Candidate_Resume.md)
-- [Formal Cover Letter (1 Page)](file:///c:/Users/Prakhar%20Sharma/Downloads/Vandana%20assignn/application_dossier/Cover_Letter.md)
