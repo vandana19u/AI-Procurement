@@ -15,7 +15,6 @@ This project delivers an end-to-end **Computational Procurement Resource and Evi
 3. A traceable, 24-point **Due-Diligence Checklist** with statutory citations.
 4. An automated **Tender Specification & GeM Model Clause Generator** (Special Bidding Documents / SBD).
 5. A **State Government Use-Case Testing Suite** pre-loaded with four realistic Indian public health scenarios.
-6. A complete **Candidate Application Dossier** (2-page Resume & 1-page Cover Letter) fulfilling all recruitment guidelines.
 
 ---
 
