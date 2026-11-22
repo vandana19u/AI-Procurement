@@ -110,3 +110,5 @@ Then visit **`http://localhost:3000`** in your browser.
 
 ---
 
+**## Limitations
+section to the README: simulated scenarios, no user testing, illustrative thresholds, citations still being verified.
